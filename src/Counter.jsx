@@ -8,10 +8,10 @@ function Counter() {
   return (
     <div>
           <input
-            type="text"
+            type="number"
             value={count}
             onChange={(e) =>
-            setCount(e.target.value)}
+            setCount(Number(e.target.value))}
           />
 
       <p>Le compteur est  à : {count} </p>
